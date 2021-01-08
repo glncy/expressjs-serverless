@@ -1,0 +1,36 @@
+<!-- Page Properties -->
+<% page_id = "sample-page-id" %>
+
+<!-- HEADER -->
+<%- 
+  include("partials/header.ejs", 
+  { 
+    title: title,
+    page_id: page_id
+  }) 
+%>
+
+<h1>
+  <%= title %>
+</h1>
+<div id="app">Welcome to <%= title %> {{ message }}
+    <div v-on:click="changeMessage">Well</div>
+    <button-counter />
+</div>
+
+<!-- JAVASCRIPT CDNs AND SCRIPTS -->
+<%- 
+  include("partials/scripts.ejs", 
+  { 
+    page_id: page_id
+  })
+%>
+
+<!-- VUE COMPONENTS -->
+<%- include("vue/components/button-counter.ejs") %>
+
+<!-- VUE SCRIPT -->
+<%- include("vue/home.ejs") %>
+
+<!-- FOOTER -->
+<%- include("partials/footer.ejs") %>

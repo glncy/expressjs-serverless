@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Project Name | <%= title %>
+    </title>
+    <!-- CSS CDNs AND Custom CSS -->
+    <%- 
+        include("css.ejs", 
+        { 
+            page_id: page_id
+        })
+    %>
+</head>
+
+<body>

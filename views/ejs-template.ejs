@@ -1,0 +1,27 @@
+<!-- Page Properties -->
+<% page_id = "sample-page-id" %>
+
+<!-- HEADER -->
+<%- 
+  include("partials/header.ejs", 
+  { 
+    title: title,
+    page_id: page_id
+  }) 
+%>
+
+<!-- BODY HERE -->
+
+<!-- JAVASCRIPT CDNs AND SCRIPTS -->
+<%- 
+  include("partials/scripts.ejs", 
+  { 
+    page_id: page_id
+  })
+%>
+
+<!-- VUE COMPONENTS -->
+<%- include("vue/components/button-counter.ejs") %>
+
+<!-- VUE SCRIPT -->
+<%- include("vue/home.ejs") %>

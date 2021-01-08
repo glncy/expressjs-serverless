@@ -1,0 +1,30 @@
+{
+  "name": "project-name",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www",
+    "build": "ncc build ./bin/www -m",
+    "test-build": "node ./dist/index.js"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "csurf": "^1.11.0",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "mariadb": "^2.3.1",
+    "morgan": "~1.9.1",
+    "mysql2": "^2.1.0",
+    "nodemon": "^2.0.2",
+    "pg": "^8.1.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.21.6",
+    "sqlite3": "^4.2.0",
+    "tedious": "^8.3.0"
+  }
+}
